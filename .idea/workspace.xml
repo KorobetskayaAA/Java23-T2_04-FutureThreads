@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e8e8a96-0949-4f9e-bc7c-f994c9e633a2" name="Changes" comment="Basic examples">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/teamscore/java23/getasync/DownloadMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/getasync/DownloadMain.java" afterDir="false" />
+    <list default="true" id="1e8e8a96-0949-4f9e-bc7c-f994c9e633a2" name="Changes" comment="Synchronized">
       <change beforePath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/SharedMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/SharedMonitoring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/teamscore/java23/threads/ThreadsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/threads/ThreadsMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,12 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705570506960</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Synchronized">
+      <option name="closed" value="true" />
+      <created>1705590006791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705590006791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Basic examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic examples" />
+    <MESSAGE value="Synchronized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Synchronized" />
   </component>
 </project>
