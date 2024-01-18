@@ -11,6 +11,8 @@ import java.nio.file.OpenOption;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.nio.file.attribute.FileAttribute;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.CompletableFuture;
 
@@ -24,7 +26,7 @@ public class DownloadMain {
         if (Files.notExists(downloadDir)) {
             Files.createDirectory(downloadDir);
         }
-
+        List<CompletableFuture<HttpResponse<Path>>> results = new ArrayList<>();
         while (true) {
             System.out.print("Введите ссылку для скачивания файла: ");
             String url = sc.nextLine();
@@ -39,9 +41,10 @@ public class DownloadMain {
                 CompletableFuture<HttpResponse<Path>> result = client
                         .sendAsync(request,
                                 HttpResponse.BodyHandlers.ofFile(downloadDir.resolve(fileName)));
-
+                results.add(result);
                 System.out.printf("\u001B[33mНачинаем загрузку файла %s\u001B[0m\n", fileName);
-                result.thenAccept((response) -> {
+                result
+                        .thenAccept((response) -> {
                             if (response.statusCode() == 200) {
                                 System.out.printf("\u001B[32mФайл %s был успешно загружен\u001B[0m\n",
                                         response.body());
@@ -61,5 +64,6 @@ public class DownloadMain {
                 System.err.println("Некорректный URL: " + e.getMessage());
             }
         }
+        while (results.stream().anyMatch((cf) -> !cf.isDone()));
     }
 }

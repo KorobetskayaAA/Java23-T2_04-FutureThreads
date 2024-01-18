@@ -26,7 +26,7 @@ public class ThreadsMain {
 
         Thread threadA = new Thread(task);
         threadA.setName("A");
-        //threadA.setPriority(Thread.MAX_PRIORITY);
+        threadA.setPriority(Thread.MIN_PRIORITY);
 
         Thread threadJ = new Thread(task);
         threadJ.setName("J");
@@ -34,11 +34,11 @@ public class ThreadsMain {
         Thread threadD = new Thread(task);
         threadD.setName("D");
         threadD.setDaemon(true);
-        //threadD.setPriority(Thread.MIN_PRIORITY);
+        threadD.setPriority(Thread.MAX_PRIORITY);
 
-//        threadJ.start();
-//        threadJ.join();
         threadA.start();
+        threadJ.start();
+        threadJ.join();
         threadD.start();
 
         //Thread.sleep(10);

@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e8e8a96-0949-4f9e-bc7c-f994c9e633a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java23-T2_04-FutureThreads.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/future/FutureCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/future/FutureMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/getasync/DownloadMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/Pause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/SharedMonitoring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/SyncMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/threads/ThreadsMain.java" afterDir="false" />
+    <list default="true" id="1e8e8a96-0949-4f9e-bc7c-f994c9e633a2" name="Changes" comment="Basic examples">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/teamscore/java23/getasync/DownloadMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/getasync/DownloadMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/SharedMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/syncthreads/SharedMonitoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/teamscore/java23/threads/ThreadsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/teamscore/java23/threads/ThreadsMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +36,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DownloadMain.executor": "Run",
-    "Application.ProgessMain.executor": "Run",
-    "Application.SyncMain.executor": "Run",
-    "Application.ThreadsMain.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DownloadMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProgessMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SyncMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadsMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/anastasy/WebZavod/IntelliJProjects/Java23-T2_04-FutureThreads/resources&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.teamscore.java23.syncthreads" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DownloadMain">
+  <component name="RunManager" selected="Application.SyncMain">
     <configuration name="DownloadMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.teamscore.java23.getasync.DownloadMain" />
       <module name="Java23-T2_04-FutureThreads" />
@@ -122,10 +114,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DownloadMain" />
-        <item itemvalue="Application.FutureMain" />
         <item itemvalue="Application.SyncMain" />
         <item itemvalue="Application.ThreadsMain" />
+        <item itemvalue="Application.DownloadMain" />
+        <item itemvalue="Application.FutureMain" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +130,28 @@
       <option name="presentableId" value="Default" />
       <updated>1705519246927</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <option name="closed" value="true" />
+      <created>1705570489714</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705570489714</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Basic examples">
+      <option name="closed" value="true" />
+      <created>1705570506960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705570506960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <MESSAGE value="Basic examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic examples" />
   </component>
 </project>

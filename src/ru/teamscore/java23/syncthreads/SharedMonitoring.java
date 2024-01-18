@@ -1,10 +1,12 @@
 package ru.teamscore.java23.syncthreads;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class SharedMonitoring implements Runnable {
+    Object lock = new Object();
     int countIn = 0;
     int countOut = 0;
     BigDecimal sum = BigDecimal.ZERO;
@@ -16,11 +18,13 @@ public class SharedMonitoring implements Runnable {
 
     public boolean remove(double value) {
         BigDecimal val = BigDecimal.valueOf(value);
-        if (sum.compareTo(val) < 0) {
-            return false;
+        synchronized (lock) {
+            if (sum.compareTo(val) < 0) {
+                return false;
+            }
+            countOut++;
+            sum = sum.subtract(val);
         }
-        countOut++;
-        sum = sum.subtract(val);
         return true;
     }
 
